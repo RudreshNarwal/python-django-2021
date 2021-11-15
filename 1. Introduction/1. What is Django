@@ -1,0 +1,20 @@
+What is Django?
+- Python web framework 
+- Python server side framework 
+- Design to get you start fast 
+- Batteries included (It is heavy weight framework as it have pre-included packages)
+- MVT(Model view Template) Design pattern
+
+
+What is web framework?
+- Collection of modules, packages and libraires, Designed to speed up development
+
+Building API's in django?
+django + django rest framework
+
+Other python framework?
+- FastAPI
+- Flask 
+- CheeryPi
+- Web2Pi
+- Pyramid

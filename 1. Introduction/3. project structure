@@ -1,0 +1,4 @@
+settings.py ---> Main config file for our project. it's command center for our project
+
+url.py ---> route file
+
