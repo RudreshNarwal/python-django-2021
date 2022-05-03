@@ -4,6 +4,7 @@ VirtualEnv --> Instead of installing django globally, we will install vitualenv 
             will install django in that environment. This is done because some of your project might be dependent on
             django outdated verison and some are compatible with latest env. This will be managed in virtual environment
 
+pip install virtualenv
 
 Create virtual environment --> vitualenv <env name>
 
@@ -22,5 +23,6 @@ start sevrver --> pyhton3 manage.py runserver
 
 **** Move your env folder in your project folder--> This will help you in recognizing which project use which env ****
 
-start project ---> python3 manage.py startapp <project name>  (refer structure.png --> we will have multiple apps) like projects 
+start project ---> python3 manage.py startapp <project name>
+//(refer structure.png --> we will have multiple apps) like projects
 // goto djangocourse settings.py and add app in Installed Apps list
