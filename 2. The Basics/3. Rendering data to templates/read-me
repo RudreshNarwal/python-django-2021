@@ -2,7 +2,3 @@ changes in djangocourse folder in urls.py file
 changes in projects(urls, views, settings, templates)
 
 Set Template path in settings.py file
-
-- Create app specific templates
-- extend and include template
-
