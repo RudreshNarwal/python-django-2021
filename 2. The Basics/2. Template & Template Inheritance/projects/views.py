@@ -1,9 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def projects(request):
-    return HttpResponse('Here is our projects')
+    return render(request, 'projects/projects.html')
 
 
 def project(request, pk):
-    return HttpResponse('SINGLE PROJECT' + ' ' + str(pk))
+    return render(request, 'projects/project.html')
