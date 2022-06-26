@@ -1,0 +1,17 @@
+--- Make Migration---
+python3 manage.py makemigrations  -> (Create table on the basis of model)
+
+After running this, resister you model in admin.py
+
+---Run Migrations---
+python3 manage.py migrate ->  (It will create bunch of table with pre-defined user management, user session management etc.)
+
+--Create SuperUser for Django admin---
+python3 manage.py createsuperuser
+
+-- Admin Panel Login---
+rudresh
+Test@123
+
+--Change Logs--
+models.py file
