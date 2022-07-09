@@ -1,0 +1,29 @@
+--- Refer Screenshot in folder for ORM and querysets ---
+
+---- Queryset Example in terminal ---
+1. python3 manage.py shell
+     from project.models import Project
+     projects = Project.objects.all()
+     print(projects)
+
+     projectObj = Project.objects.get(title = 'Test')
+     print(projectObj)
+     print(projectObj.title)
+     print(projectObj.created)
+
+     projects1 = Project.objects.filter(title__startswith = 'Te')
+     print(projects1)
+
+     projects2 = Project.objects.filter(vote_ratio__gte = 1)     #Here gte is greater than equal to
+
+2.     # Query Models Children using set (query to get children of model)  (for One to many relationship)
+        projectObj = Project.objects.get(title = 'Test')
+        print(projectObj.reviews_set.all())
+
+3.    For Many to many relationship
+      print(projectObj.tags.all())
+
+
+---- Updates in files -----
+changes in view.py changes local data to querysets
+
