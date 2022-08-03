@@ -1,0 +1,1 @@
+With every django form we need csrf token. Used for data saferty(to add or delete safely)
