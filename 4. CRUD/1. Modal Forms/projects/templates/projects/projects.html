@@ -1,0 +1,41 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    {#Accessing a variable here. THis should be inside the block tag. As, the content outside of the block tag will not be visible#}
+    <p>Hello, you are in {{ page }} page.</p>
+
+    {% if number > 10 %}
+        <p>Number is greater than 10</p>
+    {% elif number == 10 %}
+        <p> Number is Exactly 10</p>
+    {% else %}
+        <p>Number is {{ number }}</p>
+    {% endif %}
+
+    <hr>
+
+    <h3>Projects</h3>
+
+    <ul>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Project</th>
+                <th>Vote</th>
+                <th>Created At</th>
+                <th>View</th>
+            </tr>
+            {% for project in projects %}
+                <tr>
+                    <td>{{ project.id }}</td>
+                    <td>{{ project.title }}</td>
+                    <td>{{ project.vote_total }}</td>
+                    <td>{{ project.created }}</td>
+                    <td><a href="{% url 'project' project.id %}" target="_blank">VIEW</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </ul>
+
+{% endblock %}
