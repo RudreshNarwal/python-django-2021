@@ -6,7 +6,7 @@ VirtualEnv --> Instead of installing django globally, we will install vitualenv 
 
 pip install virtualenv
 
-Create virtual environment --> vitualenv <env name>
+Create virtual environment --> virtualenv <env name>
 
 Start and activate virtual environment -->  . <env name>/bin/activate.fish
 
@@ -18,7 +18,7 @@ List of command in django --> django-admin
 
 Create a project --> django-admin startproject <project name>
 
-start sevrver --> pyhton3 manage.py runserver
+start sevrver --> python3 manage.py runserver
 
 
 **** Move your env folder in your project folder--> This will help you in recognizing which project use which env ****

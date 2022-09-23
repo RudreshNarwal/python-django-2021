@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>Project Form</h1>>
+
+<form method="post">
+    <!--  CSRF token ensures that our data is not manipulated and is safe and secure  -->
+    {% csrf_token %}
+    <input type="submit">
+</form>
+
+{% endblock %}
