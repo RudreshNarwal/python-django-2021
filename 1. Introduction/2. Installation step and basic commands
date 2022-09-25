@@ -18,7 +18,7 @@ List of command in django --> django-admin
 
 Create a project --> django-admin startproject <project name>
 
-start sevrver --> python3 manage.py runserver
+start server --> python3 manage.py runserver
 
 
 **** Move your env folder in your project folder--> This will help you in recognizing which project use which env ****
