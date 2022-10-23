@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+    <img height="200" src="{{ project.featured_image.url }}">
+
+    <h3>{{ project.title }}</h3>
+    <hr>
+     {% for tg in project.tag.all %}
+       <span style="border:1px solid gray">{{tg}}</span>
+     {% endfor %}
+    <hr>
+    <p>{{ project.description }}</p>
+
+{% endblock %}
