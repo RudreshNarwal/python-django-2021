@@ -1,0 +1,16 @@
+- Changes in settings.py, styles directory, main.html, navbar.html (added logo), model.py(added featured img)
+
+- pip3 install pillow (image processing library)
+
+- url (added path to find locally uploaded images)
+
+-forms.py (added enctype="multipart/form-data)
+
+- views.py (added request.FILES)
+
+- For production we can't have our static files on same server. So, we will use django collect static to collect alll the
+  static files and create a bundle, then djnago will handle rest of the stuff for us
+
+    python manage.py collectstatic
+
+- pip3 install whitenoise (A solution to handle static files in production) and add it to middleware in settings.py
