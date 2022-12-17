@@ -2,12 +2,14 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import User  # importing default django user model
 
-
 # Create your models here.
 # Inherit from models.Model
+
+
 class Profile(models.Model):
     # User will have one to one relationship with userModel
-    user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)#models.CASCADE -> On user deletion, it will delete profile entry as well
+    user = models.OneToOneField(User, null=True, blank=True,
+                                on_delete=models.CASCADE)  # models.CASCADE -> On user deletion, it will delete profile entry as well
     name = models.CharField(max_length=200, null=True, blank=True)
     email = models.CharField(max_length=200, null=True, blank=True)
     username = models.CharField(max_length=200, null=True, blank=True)

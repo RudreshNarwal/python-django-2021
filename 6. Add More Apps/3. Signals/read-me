@@ -1,11 +1,4 @@
-1. Create user app
-    python manage.py startapp users
-
-2. Add urls.py in users folder and create urls
-3. Add Users app in settings.py (INSTALLED_APPS)
-4. Add Users app url in our main urls.py file
-5. After creating user view and model. Import users model in admin.py and Run
-     python manage.py makemigrations
-     python manage.py migrate
-
-
+1. See Screenshots for Signals intro
+2. Added Profile and User model signals in users>signals.py
+3. Import signal.py in users>app.py
+4. You can either annotate on top function for defining signal or can create a separate method call for that
